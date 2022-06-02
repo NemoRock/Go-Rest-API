@@ -7,6 +7,12 @@ import (
 	"log"
 )
 
+/*
+netsh advfirewall firewall add rule name="Postgre Port" dir=in action=allow protocol=TCP localport=5432
+
+createdb -U postgres testdb
+*/
+
 var (
 	configPath string
 )
